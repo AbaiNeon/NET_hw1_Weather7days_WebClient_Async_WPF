@@ -1,0 +1,64 @@
+﻿<Window
+    x:Class="SETEV_hw1_Weather7days_WPF.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SETEV_hw1_Weather7days_WPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="555.556"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBox
+            Name="txtBoxCity"
+            Width="277"
+            Height="54"
+            Margin="36,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            Text=""
+            TextWrapping="Wrap" />
+
+        <Label
+            Width="277"
+            Height="41"
+            Margin="36,29,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Enter City (example: London):"
+            FontSize="20" />
+        <Button
+            Name="btnGetWeather"
+            Width="127"
+            Height="54"
+            Margin="374,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnGetWeatherClick"
+            Content="Get Weather"
+            FontSize="20" />
+        <TextBlock
+            Name="txtBlockTemp"
+            Width="306"
+            Height="96"
+            Margin="195,238,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightGray"
+            FontSize="36"
+            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            Text=""
+            TextWrapping="Wrap" />
+        <Image
+            Name="image"
+            Width="141"
+            Height="132"
+            Margin="36,202,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+    </Grid>
+</Window>
